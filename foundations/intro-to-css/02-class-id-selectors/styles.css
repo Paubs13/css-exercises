@@ -1,0 +1,16 @@
+.odds {
+    background-color: #ff8080;
+    font: Verdana "DejaVu Sans" sans-serif;
+}
+#two {
+    color: #0066ff;
+    font-size: 36px;
+}
+#cooler {
+    font-size: 24px;
+}
+#four{
+    font-size: 24px;
+    font-weight: bold;
+    background-color: #99ff99;
+}
