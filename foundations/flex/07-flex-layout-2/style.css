@@ -4,19 +4,19 @@ body {
   min-height: 100vh;
 }
 
-.header {
+header {
   height: 72px;
   background: darkmagenta;
   color: white;
 }
 
-.footer {
+footer {
   height: 72px;
   background: #eee;
   color: darkmagenta;
 }
 
-.sidebar {
+nav {
   width: 300px;
   background: royalblue;
   box-sizing: border-box;
@@ -26,4 +26,81 @@ body {
   border: 1px solid #eee;
   box-shadow: 2px 4px 16px rgba(0,0,0,.06);
   border-radius: 4px;
+}
+
+/* MY SOLUTION */
+
+body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+header,
+footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.title {
+  font-size: 40px;
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+p{
+  margin: 0;
+  padding: 0;
+}
+
+.column-2 {
+  display: flex;
+  flex: 1 0 auto;
+  flex-direction: row;
+  align-items: center;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  flex: 1 0 300px;
+  align-self: stretch;
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: #eee;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  align-self: stretch;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+  gap: 20px;
+}
+
+.card {
+  display:flex;
+  flex: 0 1 300px;
+  height: 300px;
+}
+
+footer {
+  justify-content: center;
 }
